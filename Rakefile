@@ -15,7 +15,7 @@ begin
           repo.checkout('releasable')
           regenerate_gemspec!
           commit_gemspec! if gemspec_changed?
-          output.puts "Pushing master to origin"
+          output.puts "Pushing releasable to origin"
           repo.push
         end
       end
