@@ -45,7 +45,7 @@ begin
 
   Jeweler::Tasks.new do |gem|
     gem.name = 'nov-ruby-openid'
-    gem.author = 'nov matake'
+    gem.authors = ['nov matake']
     gem.email = 'nov@matake.jp'
     gem.homepage = 'http://github.com/nov/ruby-openid/'
     gem.summary = 'A library for consuming and serving OpenID identities.'
