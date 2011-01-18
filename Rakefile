@@ -30,7 +30,7 @@ begin
             system "git status"
             raise "Unclean staging area! Be sure to commit or .gitignore everything first. See `git status` above."
           end
-          repo.checkout('master')
+          repo.checkout('releasable')
           repo.push
           if release_not_tagged?
             output.puts "Tagging #{release_tag}"
