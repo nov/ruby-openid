@@ -52,6 +52,7 @@ begin
     gem.extra_rdoc_files = ["LICENSE", "README", "INSTALL","UPGRADE","CHANGELOG", "CHANGES-2.1.0", "UPGRADE"]
     gem.files.exclude "admin","_darcs","coverage",".gitignore","gemspec"
   end
+  Jeweler::GemcutterTasks.new
 rescue LoadError
   puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"
 end
